@@ -1,49 +1,7 @@
-/* Small, unobtrusive JavaScript.
-   The site works fine without it. This adds two extras:
-   1. the dark-mode toggle button in the header (all pages)
-   2. the "copy email address" button on the contact page */
+/* Copy the contact email to the clipboard. The page works without this. */
 
 (function () {
     "use strict";
-
-    /* ---------- Dark mode ---------- */
-
-    var root = document.documentElement;
-    var themeBtn = document.getElementById("theme-toggle");
-
-    function themeLabel() {
-        /* the button always shows the mode you would switch TO */
-        return root.getAttribute("data-theme") === "dark" ? "Light" : "Dark";
-    }
-
-    function paintThemeBtn() {
-        if (themeBtn) {
-            themeBtn.textContent = themeLabel();
-        }
-    }
-
-    function setTheme(value) {
-        if (value === "dark") {
-            root.setAttribute("data-theme", "dark");
-        } else {
-            root.removeAttribute("data-theme");
-        }
-        try {
-            localStorage.setItem("theme", value);
-        } catch (err) {
-            /* private browsing etc. — the choice just won't persist */
-        }
-        paintThemeBtn();
-    }
-
-    if (themeBtn) {
-        paintThemeBtn();
-        themeBtn.addEventListener("click", function () {
-            setTheme(root.getAttribute("data-theme") === "dark" ? "light" : "dark");
-        });
-    }
-
-    /* ---------- Copy email address ---------- */
 
     var note = document.getElementById("copy-note");
 
@@ -54,12 +12,6 @@
             note.textContent = "";
             note.classList.remove("is-done");
         }, 2500);
-    }
-
-    function copyWithClipboard(text) {
-        navigator.clipboard.writeText(text).then(showDone).catch(function () {
-            copyWithFallback(text);
-        });
     }
 
     /* Fallback for older browsers or clipboard-API failures */
@@ -90,7 +42,9 @@
         btn.addEventListener("click", function () {
             var text = btn.getAttribute("data-copy");
             if (navigator.clipboard) {
-                copyWithClipboard(text);
+                navigator.clipboard.writeText(text).then(showDone).catch(function () {
+                    copyWithFallback(text);
+                });
             } else {
                 copyWithFallback(text);
             }
