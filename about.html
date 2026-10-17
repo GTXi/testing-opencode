@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — Your Name</title>
+    <meta name="description" content="Who I am, the skills and tools I use, and what I'm learning next. Replace this description with your own.">
+
+    <!-- EDIT: search this file for "Your Name", "you@yourdomain.com" and "#" links to swap in your details -->
+
+    <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23faf7f2"/><text x="16" y="22" font-family="Georgia" font-size="17" text-anchor="middle" fill="%23b4451f">Y</text></svg>'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- restore a saved theme choice before first paint (no flash) -->
+    
+    <meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#191713" media="(prefers-color-scheme: dark)">
+ 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="wrap bar">
+            <a class="brand" href="index.html">Your Name</a>
+            <nav class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Work</a></li>
+                    <li><a href="about.html" aria-current="page">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="theme-btn" id="theme-toggle" aria-label="Switch between light and dark mode">Dark</button>
+        </div>
+    </header>
+
+    <main id="main" class="wrap">
+
+        <header class="page-head">
+            <p class="eyebrow">File 02 · About</p>
+            <h1>A bit about me.</h1>
+            <p class="lede">Two or three honest paragraphs &mdash; no need to write a bio for a museum plaque.</p>
+        </header>
+
+        <section class="about-grid section" aria-label="About me">
+            <figure class="photo">
+                <!-- EDIT: replace images/portrait.svg with a real photo of you -->
+                <img src="images/portrait.svg" alt="Portrait placeholder — replace with a photo of you" width="800" height="1000">
+                <figcaption>Same placeholder portrait &mdash; your face goes here.</figcaption>
+            </figure>
+
+            <div class="prose">
+                <!-- EDIT: your story, in your own voice -->
+                <p>This paragraph is yours: where you&rsquo;re from, what brought you to making things on the web, and what keeps you curious. Write it the way you&rsquo;d tell a friend over coffee &mdash; three or four sentences is plenty.</p>
+                <p>Another paragraph for the middle of the story: what you work on now, the kind of problems you enjoy, and the odd non-obvious skill you picked up somewhere unexpected.</p>
+                <p>Close with where you&rsquo;d like this to go. A sentence about direction reads better than a list of ambitions.</p>
+            </div>
+        </section>
+
+        <!-- Skills & tools: a plain index of rows, easy to edit -->
+        <section class="section" aria-labelledby="skills-title">
+            <header class="section-head">
+                <p class="eyebrow">02 &middot; Skills &amp; tools</p>
+                <h2 class="section-title" id="skills-title">What I work with.</h2>
+            </header>
+            <dl class="rows">
+                <!-- EDIT: replace each line with your real stack -->
+                <div class="rows__item">
+                    <dt>Making</dt>
+                    <dd>HTML, CSS, JavaScript &mdash; replace with the languages you build in.</dd>
+                </div>
+                <div class="rows__item">
+                    <dt>Tools</dt>
+                    <dd>Git, VS&nbsp;Code, Figma &mdash; the tools open on your machine right now.</dd>
+                </div>
+                <div class="rows__item">
+                    <dt>Learning</dt>
+                    <dd>Whatever you&rsquo;re halfway through &mdash; be honest, it&rsquo;s more interesting than &ldquo;everything&rdquo;.</dd>
+                </div>
+            </dl>
+        </section>
+
+        <section class="section" aria-labelledby="off-title">
+            <header class="section-head">
+                <p class="eyebrow">03 &middot; Off the clock</p>
+                <h2 class="section-title" id="off-title">Things that aren&rsquo;t a screen.</h2>
+            </header>
+            <dl class="rows">
+                <div class="rows__item">
+                    <dt>Interests</dt>
+                    <dd>Photography, cooking, cycling &mdash; edit to match you, or point the curious at the <a href="gallery.html">gallery</a>.</dd>
+                </div>
+                <div class="rows__item">
+                    <dt>Currently</dt>
+                    <dd>One small ongoing thing &mdash; a sourdough starter, a film camera, a half-read book.</dd>
+                </div>
+            </dl>
+            <p class="note" style="margin-top: 1rem;">If any of this changes, change it &mdash; a stale about page is a broken link to the past.</p>
+        </section>
+    </main>
+
+    <footer class="site-foot">
+        <div class="wrap foot-inner">
+            <p class="foot-brand">Your Name</p>
+            <p>Handmade with HTML &amp; CSS &mdash; no frameworks, no trackers. <a href="mailto:you@yourdomain.com">you@yourdomain.com</a></p>
+            <p>&copy; 2026 &middot; swap every &ldquo;Your Name&rdquo; and &ldquo;you@&rdquo; for your own &mdash; find &amp; replace will do it.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

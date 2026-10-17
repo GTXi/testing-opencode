@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery — Your Name</title>
+    <meta name="description" content="Photographs, sketches and experiments by Your Name. Replace this description with your own.">
+
+    <!-- EDIT: search this file for "Your Name", "you@yourdomain.com" and "#" links to swap in your details -->
+
+    <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23faf7f2"/><text x="16" y="22" font-family="Georgia" font-size="17" text-anchor="middle" fill="%23b4451f">Y</text></svg>'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- restore a saved theme choice before first paint (no flash) -->
+    
+    <meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#191713" media="(prefers-color-scheme: dark)">
+ 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="wrap bar">
+            <a class="brand" href="index.html">Your Name</a>
+            <nav class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="theme-btn" id="theme-toggle" aria-label="Switch between light and dark mode">Dark</button>
+        </div>
+    </header>
+
+    <main id="main" class="wrap">
+
+        <header class="page-head">
+            <p class="eyebrow">File 03 · Gallery</p>
+            <h1>Things I&rsquo;ve been looking&nbsp;at.</h1>
+            <p class="lede">Photographs, sketches, screenshots of half-broken experiments. Six placeholders below &mdash; tap any photo to see the story behind it.</p>
+        </header>
+
+        <!-- Flip cards: an uneven grid where every picture turns around
+             to show the story behind it. Pure CSS, no JavaScript:
+             the hidden checkbox drives the flip, so keyboard users can
+             Tab to a photo and press Space to turn it over.
+             Layout classes: g-wide (4 cols), g-narrow (2 cols),
+             g-half (3 cols), plus an aspect-ratio class (xar-*) that
+             is duplicated on both faces so the card keeps its shape.
+             Rearrange freely. -->
+        <section class="gallery" aria-label="Photo gallery">
+            <!-- EDIT: replace each SVG with a real image and write the real story -->
+            <figure class="flip g-wide">
+                <input type="checkbox" id="flip-1" class="flip__input" aria-label="Show the story behind photo 1">
+                <label class="flip__inner" for="flip-1">
+                    <span class="flip__front">
+                        <span class="xar-32 flip__frame" aria-hidden="true">
+                            <img src="images/gallery-1.svg" alt="Placeholder — replace with a photograph and describe it here" width="900" height="600">
+                            <em class="flip__hint">tap for the story</em>
+                        </span>
+                    </span>
+                    <span class="flip__back xar-32">
+                        <b class="flip__num" aria-hidden="true">01</b>
+                        <p class="flip__story">The story behind this photo goes here — what happened, why the shutter went off, whatever sticks in memory. Three honest sentences beat a paragraph of mood-words. <!-- EDIT --></p>
+                        <em class="flip__hint">tap to flip back</em>
+                    </span>
+                </label>
+            </figure>
+            <figure class="flip g-narrow">
+                <input type="checkbox" id="flip-2" class="flip__input" aria-label="Show the story behind photo 2">
+                <label class="flip__inner" for="flip-2">
+                    <span class="flip__front">
+                        <span class="xar-34 flip__frame" aria-hidden="true">
+                            <img src="images/gallery-2.svg" alt="Placeholder — replace with a photograph and describe it here" width="600" height="800">
+                            <em class="flip__hint">tap for the story</em>
+                        </span>
+                    </span>
+                    <span class="flip__back xar-34">
+                        <b class="flip__num" aria-hidden="true">02</b>
+                        <p class="flip__story">A detail worth noticing went by and the camera caught it. Edit freely. <!-- EDIT --></p>
+                        <em class="flip__hint">tap to flip back</em>
+                    </span>
+                </label>
+            </figure>
+            <figure class="flip g-narrow">
+                <input type="checkbox" id="flip-3" class="flip__input" aria-label="Show the story behind photo 3">
+                <label class="flip__inner" for="flip-3">
+                    <span class="flip__front">
+                        <span class="xar-11 flip__frame" aria-hidden="true">
+                            <img src="images/gallery-3.svg" alt="Placeholder — replace with a photograph and describe it here" width="600" height="600">
+                            <em class="flip__hint">tap for the story</em>
+                        </span>
+                    </span>
+                    <span class="flip__back xar-11">
+                        <b class="flip__num" aria-hidden="true">03</b>
+                        <p class="flip__story">Something non-screen: replace this with the story. <!-- EDIT --></p>
+                        <em class="flip__hint">tap to flip back</em>
+                    </span>
+                </label>
+            </figure>
+            <figure class="flip g-wide">
+                <input type="checkbox" id="flip-4" class="flip__input" aria-label="Show the story behind photo 4">
+                <label class="flip__inner" for="flip-4">
+                    <span class="flip__front">
+                        <span class="xar-32 flip__frame" aria-hidden="true">
+                            <img src="images/gallery-4.svg" alt="Placeholder — replace with a photograph and describe it here" width="900" height="600">
+                            <em class="flip__hint">tap for the story</em>
+                        </span>
+                    </span>
+                    <span class="flip__back xar-32">
+                        <b class="flip__num" aria-hidden="true">04</b>
+                        <p class="flip__story">Or an experiment that worked — write down what it was. <!-- EDIT --></p>
+                        <em class="flip__hint">tap to flip back</em>
+                    </span>
+                </label>
+            </figure>
+            <figure class="flip g-half">
+                <input type="checkbox" id="flip-5" class="flip__input" aria-label="Show the story behind photo 5">
+                <label class="flip__inner" for="flip-5">
+                    <span class="flip__front">
+                        <span class="xar-43 flip__frame" aria-hidden="true">
+                            <img src="images/gallery-5.svg" alt="Placeholder — replace with a photograph and describe it here" width="800" height="600">
+                            <em class="flip__hint">tap for the story</em>
+                        </span>
+                    </span>
+                    <span class="flip__back xar-43">
+                        <b class="flip__num" aria-hidden="true">05</b>
+                        <p class="flip__story">Keep stories short and honest. <!-- EDIT --></p>
+                        <em class="flip__hint">tap to flip back</em>
+                    </span>
+                </label>
+            </figure>
+            <figure class="flip g-half">
+                <input type="checkbox" id="flip-6" class="flip__input" aria-label="Show the story behind photo 6">
+                <label class="flip__inner" for="flip-6">
+                    <span class="flip__front">
+                        <span class="xar-43 flip__frame" aria-hidden="true">
+                            <img src="images/gallery-6.svg" alt="Placeholder — replace with a photograph and describe it here" width="800" height="600">
+                            <em class="flip__hint">tap for the story</em>
+                        </span>
+                    </span>
+                    <span class="flip__back xar-43">
+                        <b class="flip__num" aria-hidden="true">06</b>
+                        <p class="flip__story">The last one, until the next walk. <!-- EDIT --></p>
+                        <em class="flip__hint">tap to flip back</em>
+                    </span>
+                </label>
+            </figure>
+        </section>
+    </main>
+
+    <footer class="site-foot">
+        <div class="wrap foot-inner">
+            <p class="foot-brand">Your Name</p>
+            <p>Handmade with HTML &amp; CSS &mdash; no frameworks, no trackers. <a href="mailto:you@yourdomain.com">you@yourdomain.com</a></p>
+            <p>&copy; 2026 &middot; swap every &ldquo;Your Name&rdquo; and &ldquo;you@&rdquo; for your own &mdash; find &amp; replace will do it.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

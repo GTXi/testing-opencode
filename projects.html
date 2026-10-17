@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — Your Name</title>
+    <meta name="description" content="Selected projects by Your Name. Replace this description with your own.">
+
+    <!-- EDIT: search this file for "Your Name", "you@yourdomain.com" and "#" links to swap in your details -->
+
+    <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23faf7f2"/><text x="16" y="22" font-family="Georgia" font-size="17" text-anchor="middle" fill="%23b4451f">Y</text></svg>'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- restore a saved theme choice before first paint (no flash) -->
+    
+    <meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#191713" media="(prefers-color-scheme: dark)">
+ 
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="wrap bar">
+            <a class="brand" href="index.html">Your Name</a>
+            <nav class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html" aria-current="page">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="theme-btn" id="theme-toggle" aria-label="Switch between light and dark mode">Dark</button>
+        </div>
+    </header>
+
+    <main id="main" class="wrap">
+
+        <header class="page-head">
+            <p class="eyebrow">File 02 · Work</p>
+            <h1>Projects.</h1>
+            <p class="lede">A curated list, newest first. Keep the best three, delete the rest &mdash; a short honest list beats a long padded one.</p>
+        </header>
+
+        <!-- Featured project: one screenshot, one story -->
+        <article class="featured" aria-labelledby="feat-title">
+            <div>
+                <p class="tagrow">HTML &middot; CSS &middot; JavaScript &middot; ONE TAG FROM YOU</p>
+                <h2 id="feat-title">Placeholder Project One</h2>
+                <p class="lede">Two or three sentences: the problem it solves, the choice you&rsquo;re proud of, and one thing you&rsquo;d do differently. Edit freely &mdash; this is the one you&rsquo;d show a stranger.</p>
+                <div class="featured__links">
+                    <!-- EDIT: replace both # links with your live demo and repository -->
+                    <a class="arrow-link" href="#" title="Replace with your live demo URL">Live demo <span class="arrow-link__sym" aria-hidden="true">&nearr;</span></a>
+                    <a class="arrow-link" href="#" title="Replace with your repository URL">Code <span class="arrow-link__sym" aria-hidden="true">&nearr;</span></a>
+                </div>
+                <p class="note featured__note">Both links go nowhere yet &mdash; wire them up when the real project is in.</p>
+            </div>
+            <!-- EDIT: replace images/featured.svg with a real screenshot -->
+            <figure>
+                <img src="images/featured.svg" alt="Screenshot placeholder for Placeholder Project One — replace with a real screenshot" width="1200" height="800">
+            </figure>
+        </article>
+
+        <!-- The rest: a plain index, one row per project -->
+        <section id="project-list" aria-label="More projects">
+            <div class="index">
+                <!-- EDIT: repeat a row per project; delete rows you don't need -->
+                <a class="index__item" href="#" title="Replace with your project link">
+                    <span class="index__num" aria-hidden="true">02</span>
+                    <span class="index__body">
+                        <span class="index__title">Placeholder Project Two</span>
+                        <span class="index__desc">A small design experiment. One confident sentence beats four vague ones.</span>
+                    </span>
+                    <span class="index__year">Year</span>
+                    <span class="index__arrow" aria-hidden="true">&rarr;</span>
+                </a>
+                <a class="index__item" href="#" title="Replace with your project link">
+                    <span class="index__num" aria-hidden="true">03</span>
+                    <span class="index__body">
+                        <span class="index__title">Placeholder Project Three</span>
+                        <span class="index__desc">A tool you built for yourself and kept using afterwards.</span>
+                    </span>
+                    <span class="index__year">Year</span>
+                    <span class="index__arrow" aria-hidden="true">&rarr;</span>
+                </a>
+                <a class="index__item" href="#" title="Replace with your project link">
+                    <span class="index__num" aria-hidden="true">04</span>
+                    <span class="index__body">
+                        <span class="index__title">Placeholder Project Four</span>
+                        <span class="index__desc">A collaboration &mdash; say what you did, credit the others.</span>
+                    </span>
+                    <span class="index__year">Year</span>
+                    <span class="index__arrow" aria-hidden="true">&rarr;</span>
+                </a>
+                <a class="index__item" href="#" title="Replace with your project link">
+                    <span class="index__num" aria-hidden="true">05</span>
+                    <span class="index__body">
+                        <span class="index__title">Placeholder Project Five</span>
+                        <span class="index__desc">Something small and old you&rsquo;re still fond of.</span>
+                    </span>
+                    <span class="index__year">Year</span>
+                    <span class="index__arrow" aria-hidden="true">&rarr;</span>
+                </a>
+            </div>
+            <p class="note" style="margin-top: 1rem;">Each row is one link &mdash; swap the <code>#</code> in its <code>href</code> and edit the title and description.</p>
+        </section>
+    </main>
+
+    <footer class="site-foot">
+        <div class="wrap foot-inner">
+            <p class="foot-brand">Your Name</p>
+            <p>Handmade with HTML &amp; CSS &mdash; no frameworks, no trackers. <a href="mailto:you@yourdomain.com">you@yourdomain.com</a></p>
+            <p>&copy; 2026 &middot; swap every &ldquo;Your Name&rdquo; and &ldquo;you@&rdquo; for your own &mdash; find &amp; replace will do it.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
