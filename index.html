@@ -1,1 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEST</title>
+    <meta name="description" content="The personal site of Your Name — projects, notes, skills and a gallery. Replace this description with your own.">
 
+    <!-- EDIT: search this file for "Your Name", "you@yourdomain.com" and "#" links to swap in your details -->
+
+    <link rel="icon" href='data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" fill="%23faf7f2"/><text x="16" y="22" font-family="Georgia" font-size="17" text-anchor="middle" fill="%23b4451f">Y</text></svg>'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- restore a saved theme choice before first paint (no flash) -->
+    <script>try{var t=localStorage.getItem("theme");if(t){document.documentElement.setAttribute("data-theme",t)}}catch(e){}</script>
+    <meta name="theme-color" content="#faf7f2" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#191713" media="(prefers-color-scheme: dark)">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header">
+        <div class="wrap bar">
+            <a class="brand" href="index.html">Your Name</a>
+            <nav class="site-nav" aria-label="Primary">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="projects.html">Work</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button type="button" class="theme-btn" id="theme-toggle" aria-label="Switch between light and dark mode">Dark</button>
+        </div>
+    </header>
+
+    <main id="main" class="wrap">
+
+        <!-- Hero: big name, an italic tagline, one photo. EDIT the tagline -->
+        <section class="hero" aria-label="Introduction">
+            <div class="hero__intro">
+                <p class="eyebrow">File 01 · Home</p>
+                <h1 class="hero-name">Your Name</h1>
+                <p class="hero-tag">I make small, careful things for the web — and photograph the world between builds.</p>
+                <p class="lede">This is my own corner of the internet: the work I&rsquo;ve shipped, the tools I keep close, and a gallery of whatever I&rsquo;ve been looking at lately. No pop-ups, no newsletter trap.</p>
+                <div class="hero-links">
+                    <a class="arrow-link" href="projects.html">See the work <span class="arrow-link__sym" aria-hidden="true">&rarr;</span></a>
+                    <a class="arrow-link" href="about.html">About me</a>
+                    <a class="arrow-link" href="contact.html">Say hello</a>
+                </div>
+            </div>
+            <figure class="photo">
+                <!-- EDIT: replace images/portrait.svg with a real photo of you -->
+                <img src="images/portrait.svg" alt="Portrait placeholder — replace with a photo of you" width="800" height="1000">
+                <figcaption>Your Name, somewhere you&rsquo;d rather be &mdash; swap this photo for your own.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Selected work: an index of three favourite things -->
+        <section class="section" aria-labelledby="sel-title">
+            <header class="section-head">
+                <p class="eyebrow">02 &middot; Selected work</p>
+                <h2 class="section-title" id="sel-title">A few things I&rsquo;ve made.</h2>
+            </header>
+            <div class="index">
+                <!-- EDIT: point each row at its real project (or replace them all) -->
+                <a class="index__item" href="projects.html">
+                    <span class="index__num" aria-hidden="true">01</span>
+                    <span class="index__body">
+                        <span class="index__title">Placeholder Project One</span>
+                        <span class="index__desc">A small web tool that does one job well. Replace this line with what it actually does.</span>
+                    </span>
+                    <span class="index__year">Year</span>
+                    <span class="index__arrow" aria-hidden="true">&rarr;</span>
+                </a>
+                <a class="index__item" href="projects.html">
+                    <span class="index__num" aria-hidden="true">02</span>
+                    <span class="index__body">
+                        <span class="index__title">Placeholder Project Two</span>
+                        <span class="index__desc">A design experiment or a little library. One confident sentence beats four vague ones.</span>
+                    </span>
+                    <span class="index__year">Year</span>
+                    <span class="index__arrow" aria-hidden="true">&rarr;</span>
+                </a>
+                <a class="index__item" href="projects.html">
+                    <span class="index__num" aria-hidden="true">03</span>
+                    <span class="index__body">
+                        <span class="index__title">Placeholder Project Three</span>
+                        <span class="index__desc">The project you&rsquo;d show a stranger. If it isn&rsquo;t, it doesn&rsquo;t belong on the homepage.</span>
+                    </span>
+                    <span class="index__year">Year</span>
+                    <span class="index__arrow" aria-hidden="true">&rarr;</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- "Just now": three short, honest lines -->
+        <section class="section" aria-labelledby="now-title">
+            <header class="section-head">
+                <p class="eyebrow">03 &middot; Just now</p>
+                <h2 class="section-title" id="now-title">What&rsquo;s happening at the moment.</h2>
+            </header>
+            <dl class="rows">
+                <div class="rows__item">
+                    <dt>Building</dt>
+                    <dd>Replace with your current project &mdash; one clause, no adjectives.&nbsp;</dd>
+                </div>
+                <div class="rows__item">
+                    <dt>Reading</dt>
+                    <dd>Replace with a book you actually like.&nbsp;</dd>
+                </div>
+                <div class="rows__item">
+                    <dt>Based in</dt>
+                    <dd>Your city, your time zone.&nbsp;</dd>
+                </div>
+            </dl>
+            <p class="note" style="margin-top: 1rem;">Three lines, updated whenever something changes.</p>
+        </section>
+
+        <!-- Elsewhere on this site -->
+        <section class="section" aria-labelledby="more-title">
+            <header class="section-head">
+                <p class="eyebrow">04 &middot; Elsewhere on this site</p>
+                <h2 class="section-title" id="more-title">More to poke around in.</h2>
+            </header>
+            <div class="index">
+                <a class="index__item" href="about.html">
+                    <span class="index__num" aria-hidden="true">01</span>
+                    <span class="index__body">
+                        <span class="index__title">About</span>
+                        <span class="index__desc">Who I am, the skills and tools I use, and what I&rsquo;m learning next.</span>
+                    </span>
+                    <span class="index__year">Visit</span>
+                    <span class="index__arrow" aria-hidden="true">&rarr;</span>
+                </a>
+                <a class="index__item" href="gallery.html">
+                    <span class="index__num" aria-hidden="true">02</span>
+                    <span class="index__body">
+                        <span class="index__title">Gallery</span>
+                        <span class="index__desc">Photographs and experiments &mdash; the non-screen half of my life.</span>
+                    </span>
+                    <span class="index__year">Visit</span>
+                    <span class="index__arrow" aria-hidden="true">&rarr;</span>
+                </a>
+                <a class="index__item" href="contact.html">
+                    <span class="index__num" aria-hidden="true">03</span>
+                    <span class="index__body">
+                        <span class="index__title">Contact</span>
+                        <span class="index__desc">One email address, no forms, no gatekeeping.</span>
+                    </span>
+                    <span class="index__year">Visit</span>
+                    <span class="index__arrow" aria-hidden="true">&rarr;</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-foot">
+        <div class="wrap foot-inner">
+            <p class="foot-brand">Your Name</p>
+            <p>Handmade with HTML &amp; CSS &mdash; no frameworks, no trackers. <a href="mailto:you@yourdomain.com">you@yourdomain.com</a></p>
+            <p>&copy; 2026 &middot; swap every &ldquo;Your Name&rdquo; and &ldquo;you@&rdquo; for your own &mdash; find &amp; replace will do it.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
